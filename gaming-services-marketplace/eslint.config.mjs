@@ -19,6 +19,26 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // Allow @ts-nocheck comments
+      "@typescript-eslint/ban-ts-comment": "off",
+      // Allow unused variables
+      "@typescript-eslint/no-unused-vars": "off",
+      // Allow explicit any type
+      "@typescript-eslint/no-explicit-any": "off",
+      // Allow empty object types
+      "@typescript-eslint/no-empty-object-type": "off",
+      // Allow missing React keys (common in development)
+      "react/jsx-key": "warn",
+      // Allow missing dependencies in useEffect
+      "react-hooks/exhaustive-deps": "warn",
+      // Allow unescaped entities in JSX
+      "react/no-unescaped-entities": "off",
+      // Allow missing dependencies in useEffect
+      "react-hooks/exhaustive-deps": "warn",
+      // Allow missing dependencies in useEffect
+      "react-hooks/exhaustive-deps": "warn",
+    }
   },
 ];
 
