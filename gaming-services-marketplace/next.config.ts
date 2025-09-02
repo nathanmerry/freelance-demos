@@ -6,10 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // GitHub Pages configuration
-  // Replace 'gaming-services-marketplace' with your actual repository name if different
-  basePath: process.env.NODE_ENV === 'production' ? '/gaming-services-marketplace' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/gaming-services-marketplace/' : '',
+  // GitHub Pages configuration for subdirectory deployment
+  // Configured for https://nathanmerry.github.io/freelance-demos/gaming-services-marketplace
+  basePath: process.env.NODE_ENV === 'production' ? '/freelance-demos/gaming-services-marketplace' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/freelance-demos/gaming-services-marketplace/' : '',
 };
 
 export default nextConfig;
