@@ -8,8 +8,8 @@ const nextConfig: NextConfig = {
   },
   // GitHub Pages configuration for subdirectory deployment
   // Configured for https://nathanmerry.github.io/freelance-demos/gaming-services-marketplace
-  basePath: process.env.NODE_ENV === 'production' ? '/freelance-demos/gaming-services-marketplace' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/freelance-demos/gaming-services-marketplace/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/freelance-demos/gaming-services-marketplace/out' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/freelance-demos/gaming-services-marketplace/out/' : '',
 };
 
 export default nextConfig;
